@@ -13,9 +13,10 @@
     "next": "^9.3.1",
     "preact": "^10.3.4",
     "preact-render-to-string": "^5.1.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ssr-prepass": "npm:preact-ssr-prepass"
+    "react": "file:lib/react",
+    "react-dom": "file:lib/react-dom",
+    "react-ssr-prepass": "npm:preact-ssr-prepass",
+    "sass": "^1.26.3"
   },
   "scripts": {
     "dev": "next",
