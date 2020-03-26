@@ -11,6 +11,7 @@ const pages = {
 
 const GenericPage: NextPage<DispatchProp> = props => {
     const { dispatch } = props;
+
     const Page = pages["Standard"];
 
     useEffect(() => {
