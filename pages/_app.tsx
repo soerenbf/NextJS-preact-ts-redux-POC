@@ -1,4 +1,7 @@
 import { AppProps } from "next/app";
+import withRedux from "next-redux-wrapper";
+
+import { configureStore } from "../store";
 
 import "../styles/critical.scss";
 
@@ -16,4 +19,4 @@ App.getInitialProps = (ctx: any) => {
     return {};
 };
 
-export default App;
+export default withRedux(configureStore)(App);

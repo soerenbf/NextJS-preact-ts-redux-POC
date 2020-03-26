@@ -1,4 +1,4 @@
-import { NextPage, GetServerSideProps } from "next";
+import { NextPage } from "next";
 
 import { StandardPage } from "../page-types/standard-page";
 

@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "next": "^9.3.1",
+    "next-redux-wrapper": "^5.0.0",
     "preact": "^10.3.4",
     "preact-render-to-string": "^5.1.4",
     "react": "file:lib/react",
     "react-dom": "file:lib/react-dom",
     "react-ssr-prepass": "npm:preact-ssr-prepass",
+    "redux": "^4.0.5",
     "sass": "^1.26.3"
   },
   "scripts": {
