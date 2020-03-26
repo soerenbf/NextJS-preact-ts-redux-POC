@@ -19,7 +19,7 @@ function App({ Component, pageProps, store }: ReduxWrapperAppProps) {
     );
 }
 
-App.getInitialProps = async ({ ctx: { store: { dispatch } } }: AppContextType) => {
+App.getInitialProps = ({ ctx: { store: { dispatch } } }: AppContextType) => {
     dispatch({ type: TestAction.INIT });
 
     return {};
