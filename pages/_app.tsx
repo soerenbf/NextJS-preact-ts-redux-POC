@@ -1,13 +1,11 @@
-import { AppProps } from "next/app";
 import withRedux, { ReduxWrapperAppProps } from "next-redux-wrapper";
 import { AppContextType } from "next/dist/next-server/lib/utils";
 import withReduxSaga from "next-redux-saga";
+import { Provider } from "react-redux";
 
 import { configureStore } from "../store";
-
 import "../styles/critical.scss";
 import { TestAction } from "../containers/test/test.actions";
-import { Provider } from "react-redux";
 
 function App({ Component, pageProps, store }: ReduxWrapperAppProps) {
     return (
