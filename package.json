@@ -7,23 +7,19 @@
   "devDependencies": {
     "@types/node": "^12.12.31",
     "@types/react": "^16.9.25",
-    "link-module-alias": "^1.2.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "next": "^9.3.1",
     "preact": "^10.3.4",
     "preact-render-to-string": "^5.1.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-ssr-prepass": "npm:preact-ssr-prepass"
   },
   "scripts": {
-    "postinstall": "link-module-alias",
     "dev": "next",
     "build": "next build",
     "start": "next start"
-  },
-  "_moduleAliases": {
-    "react": "node_modules/preact/compat",
-    "react-dom": "node_modules/preact/compat"
   }
 }
