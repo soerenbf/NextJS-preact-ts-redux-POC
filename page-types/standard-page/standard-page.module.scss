@@ -1,0 +1,5 @@
+.content {
+    :global .app__content :local & {
+        color: brown;
+    }
+}

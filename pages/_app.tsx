@@ -2,8 +2,18 @@ import { AppProps } from "next/app";
 
 import "../styles/critical.scss";
 
-function MyApp({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />
+function App({ Component, pageProps }: AppProps) {
+    return (
+        <main className="app__content">
+            <Component {...pageProps} />
+        </main>
+    );
 }
 
-export default MyApp;
+App.getInitialProps = (ctx: any) => {
+    console.log(ctx);
+
+    return {};
+};
+
+export default App;
