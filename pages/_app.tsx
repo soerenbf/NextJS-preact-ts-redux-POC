@@ -18,6 +18,7 @@ function App({ Component, pageProps, store }: ReduxWrapperAppProps) {
 }
 
 App.getInitialProps = ({ ctx: { store: { dispatch } } }: AppContextType) => {
+    // Fetch data persisting across pages here...
     dispatch({ type: TestAction.INIT });
 
     return {};

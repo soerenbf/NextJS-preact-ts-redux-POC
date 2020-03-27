@@ -1,10 +1,8 @@
-import { takeLatest, all, delay, fork } from "redux-saga/effects";
+import { takeLatest } from "redux-saga/effects";
 import { TestAction } from "./test.actions";
 
 function* onInit() {
-    console.log("start");
-    yield delay(5000);
-    console.log("done");
+    console.log("init");
 }
 
 export const testSagas = [
