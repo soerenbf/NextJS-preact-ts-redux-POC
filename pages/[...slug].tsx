@@ -4,23 +4,24 @@ import { connect, DispatchProp } from "react-redux";
 
 import { StandardPage } from "../page-types/standard-page";
 import { TestAction } from "../containers/test/test.actions";
+import { useTest } from "../containers/test/test.container";
 
 const pages = {
     Standard: StandardPage
 }
 
-const GenericPage: NextPage<DispatchProp> = props => {
-    const { dispatch } = props;
+const GenericPage: NextPage = props => {
 
     const Page = pages["Standard"];
+    const { init } = useTest();
 
     useEffect(() => {
-        dispatch({ type: TestAction.INIT });
-    }, [dispatch]);
+        init();
+    }, []);
 
     return (
         <Page />
     );
 }
 
-export default connect()(GenericPage);
+export default GenericPage;
