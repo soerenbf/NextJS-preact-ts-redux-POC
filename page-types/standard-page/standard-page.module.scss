@@ -3,3 +3,21 @@
         color: brown;
     }
 }
+
+.test {
+    color: red;
+    &--mod {
+        color: black;
+    }
+}
+
+//BEM
+.standard-page {
+    &--red {
+        background-color: red;
+    }
+
+    &__content {
+        color: black;
+    }
+}
